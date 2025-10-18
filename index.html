@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Eniola Awoleke | Profile Card</title>
+  </head>
+
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <header class="profile-header">
+        <h2 class="profile-name" data-testid="test-user-name">
+          Eniola Awoleke
+        </h2>
+        <p class="profile-bio" data-testid="test-user-bio">
+          My name is Eniola — a hardworking and dedicated final-year Computer
+          Science student (400 level). I’m on track to graduate with a
+          first-class degree. I’m deeply passionate about technology and excited
+          to keep exploring my full potential in the tech world while
+          discovering my greatest strengths along the way.
+        </p>
+      </header>
+
+      <figure class="profile-avatar-container">
+        <img
+          class="profile-avatar"
+          src="./assets/headshothng.jpeg"
+          alt="Profile photo of Eniola Awoleke"
+          width="200"
+          data-testid="test-user-avatar"
+        />
+        <figcaption>Profile photo of Eniola Awoleke</figcaption>
+      </figure>
+
+      <p class="profile-time">
+        Current time (in ms):
+        <span data-testid="test-user-time"></span>
+      </p>
+
+      <nav class="profile-social">
+        <ul data-testid="test-user-social-links">
+          <li>
+            <a
+              href="https://x.com/eawoleke?s=11&t=SF9vSR0byLsTRdppNSyMlg"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/eniolaawoleke"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/codeKarma1"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <section class="profile-hobbies">
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Watching Movies</li>
+          <li>Making research and learning new things</li>
+          <li>Content creation</li>
+        </ul>
+      </section>
+
+      <section class="profile-dislikes">
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Lies</li>
+          <li>Fake People</li>
+          <li>Laziness</li>
+        </ul>
+      </section>
+    </article>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
