@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us | Awoleke Eniola</title>
+  </head>
+  <body>
+     <nav class="navbar">
+    <a href="index.html" >Profile</a>
+    <a href="contact.html " class="active">Contact</a>
+    <a href="about.html">About</a>
+  </nav>
+    <main>
+      <article class="contact-card">
+        <header class="contact-us-header">
+          <h1>Contact Us</h1>
+          <p>
+            Have a question or want to connect? <br />Fill out the form below
+            and I’ll get back to you soon.
+          </p>
+        </header>
+
+        <form id="contactForm" novalidate>
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              data-testid="test-contact-name"
+              aria-describedby="error-name"
+              required
+            />
+            <small
+              id="error-name"
+              class="error"
+              data-testid="test-contact-error-name"
+            ></small>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              data-testid="test-contact-email"
+              aria-describedby="error-email"
+              required
+            />
+            <small
+              id="error-email"
+              class="error"
+              data-testid="test-contact-error-email"
+            ></small>
+          </div>
+
+          <!-- Subject -->
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              data-testid="test-contact-subject"
+              aria-describedby="error-subject"
+              required
+            />
+            <small
+              id="error-subject"
+              class="error"
+              data-testid="test-contact-error-subject"
+            ></small>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              data-testid="test-contact-message"
+              aria-describedby="error-message"
+              required
+            ></textarea>
+            <small
+              id="error-message"
+              class="error"
+              data-testid="test-contact-error-message"
+            ></small>
+          </div>
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            data-testid="test-contact-submit"
+            aria-label="Submit contact form"
+          >
+            Submit
+          </button>
+        </form>
+
+        <!-- Success Message -->
+        <p
+          id="success"
+          class="success-message"
+          data-testid="test-contact-success"
+          hidden
+        >
+          ✅ Thank you for reaching out! Your message has been sent
+          successfully.
+        </p>
+      </article>
+    </main>
+
+    <script src="contact.js" defer></script>
+  </body>
+</html>
